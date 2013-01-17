@@ -1,0 +1,44 @@
+div {
+    border: 1px solid #f60;
+}
+
+#container {
+    margin: .5em;
+    min-width: 17em;
+}
+
+#headerArea {
+    height: 3em;
+    margin: 0 0 .5em 0;
+}
+
+#login {
+    height: 6em;
+    margin: 0 0 .5em 0;
+}
+
+.newToDo {
+    height: 6em;
+    margin: 0 0 .5em 0;
+}
+
+.toDoList {
+    margin: 0 0 .5em 0;
+}
+
+.toDoHeader{
+    height: 3em;
+}
+
+.toDoItem {}
+.taskInfo {
+    height: 3em;
+    margin: .25em .25em .25em 0;
+    display: inline-block;
+    width: 75%; 
+}
+.taskDone {
+    height: 3em;
+    width: 20%;
+    display: inline-block;
+}
