@@ -4,45 +4,45 @@ div {
 }
 
 #container {
-    max-width: 650px;
+    max-width: 45em;
     margin: auto;
-    padding: 25px;
+    padding: 1em;
 }
 
 #headerArea {
-    width: 400px;
-    height: 150px;
+    width: 65%;
+    height: 9em;
     display: inline-block;
 }
 
 #login {
-    width: 217px;/* WHERE THE HELL DID 17 PIXELS COME FROM, BORDERS!?*/
-    height: 150px;
+    width: 30%;/* WHERE THE HELL DID 17 PIXELS COME FROM, BORDERS!?*/
+    height: 9em;
     display: inline-block;
-    margin: 0 0 25px 25px;
+    margin: 0 0 1em 1em;
 }
 
 .newToDo {
-    height: 100px;
-    margin: 0 0 25px 0;
+    height: 7em;
+    margin: 0 0 1em 0;
 }
 
 .toDoList {
-    margin: 0 0 25px 0;
+    margin: 0 0 1em 0;
 }
 
 .toDoItem {
-    width: 550px;
-    margin: 12.5px auto;
+    width: 80%;
+    margin: .5em auto;
 }
 .taskInfo {
-    height: 50px;
+    height: 4em;
     display: inline-block;
-    width: 450px
+    width: 85%;
 }
 .taskDone {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 25px;
+    width: 7.5%;
+    height: 4em;
+    margin: 0 0 0 1em;
 }
