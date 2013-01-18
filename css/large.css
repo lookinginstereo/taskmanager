@@ -1,48 +1,62 @@
 #container {
-    max-width: 45em;
+    max-width: 40em;
     margin: auto;
     padding: 1em;
 }
 
-#headerArea {}
+#headerArea {
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 #logo {
-    width: 20em; /*fixed fot logo?*/
+    width: 20em; /*fixed sized "large" logo?*/
     height: 9em;
     display: inline-block;
     float: left;
 }
 
 #login {
-    /*width: ;/* WHERE THE HELL DID 17 PIXELS COME FROM, BORDERS!?*/
     height: 9em;
     display: inline-block;
-    margin: 0 0 1em 1em;
     text-align:center;
     clear: both;
-}
-
-.newToDo {
-    height: 7em;
-    margin: 0 0 1em 0;
 }
 
 .toDoList {
     margin: 0 0 1em 0;
 }
 
+.toDoHeader {
+    height: 5em;
+    margin: 1em auto 1em auto;
+    width: 90%;
+}
+
 .toDoItem {
     width: 80%;
     margin: .5em auto;
 }
+
 .taskInfo {
     height: 4em;
     display: inline-block;
-    width: 85%;
+    max-width: 85%;
+    margin: .5em auto;
 }
 .taskDone {
-    display: inline-block;
-    width: 7.5%;
+    width: 4em;
     height: 4em;
-    margin: 0 0 0 1em;
+    float: right;
+    display: inline-block;
+    margin: .5em;
+    margin-left: 0;
 }
+
+.newToDo {
+    height: 4em;
+    margin: 0 0 1em 0;
+    width: 80%;
+    margin: .5em auto 1em auto;
+}
+

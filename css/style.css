@@ -2,5 +2,6 @@
 @import url("large.css") (min-width: 34em);
 
 div, span {
-    border: 1px solid #f60;
+    border: 1px solid #aaf;
+    background-color: rgba(0,0,0,.10);
 }

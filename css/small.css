@@ -8,17 +8,12 @@
 }
 
 #logo {
-    height: 4em;
+    height: 5em;
     margin: 0 0 .5em 0;
 }
 
 #login {
-    height: 6em;
-}
-
-.newToDo {
-    height: 6em;
-    margin: 0 0 .5em 0;
+    height: 4em;
 }
 
 .toDoList {
@@ -27,11 +22,13 @@
 
 .toDoHeader{
     height: 3em;
+    margin: 0 0 .5em;
 }
 
 .toDoItem {
     clear: both;
     text-align: center;
+    margin: 0 0 .5em 0;
 }
 .taskInfo {
     height: 3em;
@@ -46,3 +43,8 @@
     display: inline-block;
     margin: .25em;
 }
+
+.newToDo {
+    height: 4em;
+}
+
