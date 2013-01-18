@@ -1,6 +1,7 @@
-require "bundler/setup"
-require 'sinatra'
+class OCCApi
+  
+  get '/' do
+    'Hello world'
+  end
 
-get '/' do
-  'Hello world'
 end
