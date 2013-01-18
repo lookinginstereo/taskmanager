@@ -41,7 +41,7 @@
 .taskInfo {
     height: 4em;
     display: inline-block;
-    max-width: 85%;
+    max-width: 80%;
     margin: .5em auto;
 }
 .taskDone {
