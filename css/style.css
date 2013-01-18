@@ -1,7 +1,7 @@
 @import url("small.css");
 @import url("large.css") (min-width: 34em);
 
-div, span {
+div, span, ul, li {
     border: 1px solid #aaf;
     background-color: rgba(0,0,0,.10);
 }
