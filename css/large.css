@@ -1,25 +1,25 @@
-/*desktop wireframe*/
-div {
-    border: 1px solid #f60;
-}
-
 #container {
     max-width: 45em;
     margin: auto;
     padding: 1em;
 }
 
-#headerArea {
-    width: 65%;
+#headerArea {}
+
+#logo {
+    width: 20em; /*fixed fot logo?*/
     height: 9em;
     display: inline-block;
+    float: left;
 }
 
 #login {
-    width: 30%;/* WHERE THE HELL DID 17 PIXELS COME FROM, BORDERS!?*/
+    /*width: ;/* WHERE THE HELL DID 17 PIXELS COME FROM, BORDERS!?*/
     height: 9em;
     display: inline-block;
     margin: 0 0 1em 1em;
+    text-align:center;
+    clear: both;
 }
 
 .newToDo {

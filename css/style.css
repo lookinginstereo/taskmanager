@@ -1,2 +1,6 @@
 @import url("small.css");
-@import url("large.css") (min-width: 31em);
+@import url("large.css") (min-width: 34em);
+
+div, span {
+    border: 1px solid #f60;
+}

@@ -1,20 +1,19 @@
-div {
-    border: 1px solid #f60;
-}
-
 #container {
     margin: .5em;
     min-width: 17em;
 }
 
 #headerArea {
-    height: 3em;
+    margin: 0 0 .5em 0;
+}
+
+#logo {
+    height: 4em;
     margin: 0 0 .5em 0;
 }
 
 #login {
     height: 6em;
-    margin: 0 0 .5em 0;
 }
 
 .newToDo {
@@ -30,15 +29,20 @@ div {
     height: 3em;
 }
 
-.toDoItem {}
+.toDoItem {
+    clear: both;
+    text-align: center;
+}
 .taskInfo {
     height: 3em;
-    margin: .25em .25em .25em 0;
     display: inline-block;
-    width: 75%; 
+    margin: .25em auto;
+    max-width: 75%;
 }
 .taskDone {
     height: 3em;
-    width: 20%;
+    width: 3em;
+    float: right;
     display: inline-block;
+    margin: .25em;
 }
