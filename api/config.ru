@@ -8,4 +8,4 @@ require "mongoid"
 require 'json'
 require './app'
 
-run OCCApi
+run Sinatra::Application

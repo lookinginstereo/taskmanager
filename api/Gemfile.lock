@@ -9,6 +9,7 @@ GEM
       multi_json (~> 1.0)
     builder (3.0.4)
     i18n (0.6.1)
+    json (1.5.4)
     mongoid (3.0.17)
       activemodel (~> 3.1)
       moped (~> 1.2)
@@ -31,5 +32,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   mongoid
   sinatra
