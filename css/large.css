@@ -4,23 +4,19 @@
     padding: 1em;
 }
 
-#headerArea {
-    text-align: center;
-    margin-bottom: 1em;
-}
+#headerArea {}
 
 #logo {
-    width: 20em; /*fixed sized "large" logo?*/
-    height: 9em;
+    width: 60%; /*fixed sized "large" logo?*/
+    height: 6em; /*this will be auto when there is a logo*/
     display: inline-block;
-    float: left;
+    margin:0;
 }
 
 #login {
-    height: 9em;
+    height: 6em;
+    width: 39%; 
     display: inline-block;
-    text-align:center;
-    clear: both;
 }
 
 .toDoList {
@@ -28,26 +24,23 @@
 }
 
 .toDoHeader {
-    height: 5em;
-    margin: 1em auto 1em auto;
-    width: 90%;
+    height: 4em;
+    margin: 0 0 .5em 0;
 }
 
 .toDoItem {
-    width: 80%;
     margin: .5em auto;
 }
 
 .taskInfo {
     height: 4em;
     display: inline-block;
-    max-width: 80%;
+    width: 85%;
     margin: .5em auto;
 }
 .taskDone {
-    width: 4em;
+    width: 12%;
     height: 4em;
-    float: right;
     display: inline-block;
     margin: .5em;
     margin-left: 0;

@@ -27,18 +27,17 @@
 
 .toDoItem {
     clear: both;
-    text-align: center;
     margin: 0 0 .5em 0;
 }
 .taskInfo {
     height: 3em;
     display: inline-block;
-    margin: .25em auto;
-    max-width: 75%;
+    margin: .25em;
+    width: 80%;
 }
 .taskDone {
     height: 3em;
-    width: 3em;
+    width: 14%;
     float: right;
     display: inline-block;
     margin: .25em;
