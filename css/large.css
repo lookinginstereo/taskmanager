@@ -1,55 +1,54 @@
-#container {
-    max-width: 40em;
-    margin: auto;
-    padding: 1em;
-}
+@media (min-width:33em) {
+    #container {
+        max-width: 40em;
+        margin: auto;
+        padding: 1em;
+    }
 
-#headerArea {}
+    #logo {
+        width: 60%; /*fixed sized "large" logo?*/
+        height: 6em; /*this will be auto when there is a logo*/
+        display: inline-block;
+        margin:0;
+    }
 
-#logo {
-    width: 60%; /*fixed sized "large" logo?*/
-    height: 6em; /*this will be auto when there is a logo*/
-    display: inline-block;
-    margin:0;
-}
+    #login {
+        height: 6em;
+        width: 39%; 
+        display: inline-block;
+    }
 
-#login {
-    height: 6em;
-    width: 39%; 
-    display: inline-block;
-}
+    .toDoList {
+        margin: 0 0 1em 0;
+    }
 
-.toDoList {
-    margin: 0 0 1em 0;
-}
+    .toDoHeader {
+        height: 4em;
+        margin: 0 0 .5em 0;
+    }
 
-.toDoHeader {
-    height: 4em;
-    margin: 0 0 .5em 0;
-}
+    .toDoItem {
+        margin: .5em auto;
+    }
 
-.toDoItem {
-    margin: .5em auto;
-}
+    .taskInfo {
+        height: 4em;
+        display: inline-block;
+        width: 85%;
+        margin: .5em auto;
+    }
+    .taskDone {
+        width: 12%;
+        height: 4em;
+        display: inline-block;
+        margin: .5em;
+        margin-left: 0;
+    }
 
-.taskInfo {
-    height: 4em;
-    display: inline-block;
-    width: 85%;
-    margin: .5em auto;
+    .newToDo {
+        height: 4em;
+        margin: 0 0 1em 0;
+        width: 80%;
+        margin: .5em auto 1em auto;
+    }
 }
-.taskDone {
-    width: 12%;
-    height: 4em;
-    display: inline-block;
-    margin: .5em;
-    margin-left: 0;
-}
-
-.newToDo {
-    height: 4em;
-    margin: 0 0 1em 0;
-    width: 80%;
-    margin: .5em auto 1em auto;
-}
-

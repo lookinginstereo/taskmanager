@@ -1,0 +1,69 @@
+/* wireframe style */
+div, span, ul, li {
+    border: 1px solid #aaf;
+    background-color: rgba(0,0,0,.10);
+}
+
+*, *:before, *:after{
+    box-sizing : border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.right {
+    float: right;
+}
+.floatContain {
+    clear: both;
+}
+
+#container {
+    margin: .5em;
+    min-width: 17em;
+}
+
+#headerArea {
+    margin: 0 0 .5em 0;
+}
+
+@media (max-width:33em) {
+
+    #logo {
+        height: 5em;
+        margin: 0 0 .5em 0;
+    }
+
+    #login {
+        height: 4em;
+    }
+
+    .toDoList {
+        margin: 0 0 .5em 0;
+    }
+
+    .toDoHeader{
+        height: 3em;
+        margin: 0 0 .5em;
+    }
+
+    .toDoItem {
+        clear: both;
+        margin: 0 0 .5em 0;
+    }
+    .taskInfo {
+        height: 3em;
+        display: inline-block;
+        margin: .25em;
+        width: 80%;
+    }
+    .taskDone {
+        height: 3em;
+        width: 14%;
+        float: right;
+        display: inline-block;
+        margin: .25em;
+    }
+
+    .newToDo {
+        height: 4em;
+    }
+}
