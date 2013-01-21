@@ -1,12 +1,12 @@
 Mongoid.load!("mongoid.yml", :development)
 
-class OCCApi
+class OCCApi < Sinatra::Base
   
   get '/' do
     "Welcome to the API"
   end
   
-  #get all tasks lists
+  # get all tasks lists
   get '/lists' do
     content_type :json
     all_lists = Tasklist.all
@@ -14,11 +14,15 @@ class OCCApi
   end
 
   # create a new task list
-  post '/lists' do
-    title = params
-    puts params
-    Tasklist.new(title: title).save
-    # tasklist = Tasklist.new()
+  post '/lists/:listname' do
+    listname = params[:listname]
+    Tasklist.new(title: listname).save
+  end
+
+  delete "/lists/:id" do
+    id = params[:id]
+    Tasklist.where(id: id).delete
+    return "#{id} has been deleted"
   end
 
 end
