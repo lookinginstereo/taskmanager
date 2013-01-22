@@ -1,4 +1,4 @@
-@media (min-width:33em) {
+@media (min-width:34em) {
     #container {
         max-width: 40em;
         margin: auto;
@@ -37,6 +37,7 @@
         width: 85%;
         margin: .5em auto;
     }
+    
     .taskDone {
         width: 12%;
         height: 4em;
