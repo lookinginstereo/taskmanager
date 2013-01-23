@@ -4,17 +4,12 @@ div, span, ul, li {
     background-color: rgba(0,0,0,.10);
 }
 
-*, *:before, *:after{
+/*, *:before, *:after{
     box-sizing : border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-}
-.right {
-    float: right;
-}
-.floatContain {
-    clear: both;
-}
+}*/
+
 
 #container {
     margin: .5em;
@@ -25,7 +20,25 @@ div, span, ul, li {
     margin: 0 0 .5em 0;
 }
 
-@media (max-width:33em) {
+*[class*='task-']{
+    float: left;
+}
+
+.task-parent{
+    clear: left;
+    width: 100%;
+}
+
+.current-tasklist{
+    float:left;
+}
+
+.clear-float {
+    clear: both;
+}
+
+
+@media (max-width:34em) {
 
     #logo {
         height: 5em;
@@ -45,25 +58,25 @@ div, span, ul, li {
         margin: 0 0 .5em;
     }
 
-    .toDoItem {
-        clear: both;
+    .task-parent {
         margin: 0 0 .5em 0;
     }
-    .taskInfo {
+    .task-info {
         height: 3em;
         display: inline-block;
-        margin: .25em;
+        margin: .25em .2em;
         width: 80%;
     }
-    .taskDone {
+    .task-done {
         height: 3em;
         width: 14%;
         float: right;
         display: inline-block;
-        margin: .25em;
+        margin: .25em .2em;
     }
 
-    .newToDo {
+    .task-new {
         height: 4em;
+        width:100%;
     }
 }

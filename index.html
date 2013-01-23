@@ -2,35 +2,39 @@
 <html>
 <head>
     <title>OCCAL -- Helping you obsess/maximize every second of your day</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css"></link>
-    <link rel="stylesheet" type="text/css" href="css/baseStyle.css"></link>
-    <link rel="stylesheet" type="text/css" href="css/large.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/baseStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/large.css"/>
 </head>
 <body>
 <div id="container">
-    <div id="headerArea" class="floatContain">
+    <div id="headerArea" class="clear-float">
         <div id="logo"> This would contain a logo for title of the site </div>
         <div id="login"> small area for logging in</div>
+        <div class="clear-float"></div>
     </div>
-    <ul id="currentToDo" class="toDoList">
+    <div id="current-tasklist" class="clear-float">
         <div class="toDoHeader">Date and Daily-Theme</div>
-        <li class="toDoItem">
-            <span class="taskInfo left"> Task A </span>
-            <div class="taskDone">x</div> 
-        </li>
-        <li class="toDoItem">
-            <span class="taskInfo"> Task B </span>
-            <div class="taskDone">x</div> 
-        </li>
-        <li class="toDoItem">
-            <span class="taskInfo"> Task C </span>
-            <div class="taskDone">x</div> 
-        </li>
-        <li class="toDoItem">
-            <span class="taskInfo"> Task D </span>
-            <div class="taskDone">x</div> 
-        </li>
-        <li class="newToDo"> big (shrinking) to-do button </li>
+        <ul>
+            <li class="task-parent">
+                <div class="task-info"> Task A </div>
+                <div class="task-done">x</div> 
+            </li>
+            <li class="task-parent">
+                <div class="task-info"> Task B </div>
+                <div class="task-done">x</div> 
+            </li>
+            <li class="task-parent">
+                <div class="task-info"> Task C </div>
+                <div class="task-done">x</div> 
+            </li>
+            <li class="task-parent">
+                <div class="task-info"> Task D </div>
+                <div class="task-done">x</div> 
+            </li>
+        </ul>
+        <div class="task-new"> big (shrinking) to-do button </div>
+        <div class="clear-float"></div>
     </div>
 </div>
 </body>

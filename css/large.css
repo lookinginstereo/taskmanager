@@ -8,17 +8,18 @@
     #logo {
         width: 60%; /*fixed sized "large" logo?*/
         height: 6em; /*this will be auto when there is a logo*/
-        display: inline-block;
+        float: left;
         margin:0;
     }
 
     #login {
         height: 6em;
-        width: 39%; 
-        display: inline-block;
+        width: 38%; 
+        float:left;
+        margin: 0 0 0 1%;
     }
 
-    .toDoList {
+    .current-tasklist {
         margin: 0 0 1em 0;
     }
 
@@ -27,29 +28,27 @@
         margin: 0 0 .5em 0;
     }
 
-    .toDoItem {
+    .task-parent {
         margin: .5em auto;
     }
 
-    .taskInfo {
+    .task-info {
         height: 4em;
-        display: inline-block;
-        width: 85%;
-        margin: .5em auto;
+        width: 82%;
+        margin: .5em;
     }
     
-    .taskDone {
+    .task-done {
         width: 12%;
         height: 4em;
-        display: inline-block;
         margin: .5em;
         margin-left: 0;
     }
 
-    .newToDo {
+    .task-new {
         height: 4em;
         margin: 0 0 1em 0;
-        width: 80%;
+        width: 100%;
         margin: .5em auto 1em auto;
     }
 }
