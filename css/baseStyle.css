@@ -4,13 +4,6 @@ div, span, ul, li {
     background-color: rgba(0,0,0,.10);
 }
 
-/*, *:before, *:after{
-    box-sizing : border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}*/
-
-
 #container {
     margin: .5em;
     min-width: 17em;
@@ -38,45 +31,41 @@ div, span, ul, li {
 }
 
 
-@media (max-width:34em) {
+#logo {
+    height: 5em;
+    margin: 0 0 .5em 0;
+}
 
-    #logo {
-        height: 5em;
-        margin: 0 0 .5em 0;
-    }
+#login {
+    height: 4em;
+}
 
-    #login {
-        height: 4em;
-    }
+.toDoList {
+    margin: 0 0 .5em 0;
+}
 
-    .toDoList {
-        margin: 0 0 .5em 0;
-    }
+.toDoHeader{
+    height: 3em;
+    margin: 0 0 .5em;
+}
 
-    .toDoHeader{
-        height: 3em;
-        margin: 0 0 .5em;
-    }
+.task-parent {
+    margin: 0 0 .5em 0;
+}
+.task-info {
+    height: 3em;
+    display: inline-block;
+    margin: .25em 2%;
+    width: 80%;
+}
+.task-done {
+    height: 3em;
+    width: 14%;
+    display: inline-block;
+    margin: .25em 0;
+}
 
-    .task-parent {
-        margin: 0 0 .5em 0;
-    }
-    .task-info {
-        height: 3em;
-        display: inline-block;
-        margin: .25em .2em;
-        width: 80%;
-    }
-    .task-done {
-        height: 3em;
-        width: 14%;
-        float: right;
-        display: inline-block;
-        margin: .25em .2em;
-    }
-
-    .task-new {
-        height: 4em;
-        width:100%;
-    }
+.task-new {
+    height: 4em;
+    width:100%;
 }

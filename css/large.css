@@ -1,4 +1,4 @@
-@media (min-width:34em) {
+@media (min-width:30em) {
     #container {
         max-width: 40em;
         margin: auto;
@@ -35,14 +35,13 @@
     .task-info {
         height: 4em;
         width: 82%;
-        margin: .5em;
+        margin: .5em 2%;
     }
     
     .task-done {
         width: 12%;
         height: 4em;
-        margin: .5em;
-        margin-left: 0;
+        margin: .5em 0;
     }
 
     .task-new {
