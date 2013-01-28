@@ -1,20 +1,20 @@
 /* wireframe style */
-div, span, ul, li {
-    border: 1px solid #aaf;
-    background-color: rgba(0,0,0,.10);
-}
 
 #container {
     margin: .5em;
-    min-width: 17em;
+    min-width: 20em;
+    font-family: sans-serif;
 }
 
 #headerArea {
     margin: 0 0 .5em 0;
 }
 
+
 *[class*='task-']{
     float: left;
+    color: #fff;
+    background-color: #2af;
 }
 
 .task-parent{
@@ -24,6 +24,7 @@ div, span, ul, li {
 
 .current-tasklist{
     float:left;
+    background-color: #
 }
 
 .clear-float {
@@ -34,19 +35,48 @@ div, span, ul, li {
 #logo {
     height: 5em;
     margin: 0 0 .5em 0;
+    font-weight: bold;
+    color: #2af;
+    border-bottom: 2px #2af solid;
+}
+#logo h1 {
+    font-size:3em;
+}
+#logo h2 {
+    margin: 0 0 0 .5em;
 }
 
 #login {
-    height: 4em;
+    height: auto;
+    border-bottom: 2px #2af solid;
+    text-align: right;
+    padding: 0 0 .5em 0;
+}
+
+.field-input, .field-input label, .field-input input {
+    float: left;
+}
+.field-input{
+    width : 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.field-input label {
+    width: 30%;
+    margin: .5em;
+}
+.field-input input {
+    width: 64%;
 }
 
 .toDoList {
     margin: 0 0 .5em 0;
 }
 
-.toDoHeader{
+.task-header{
     height: 3em;
     margin: 0 0 .5em;
+    width: 100%;
 }
 
 .task-parent {

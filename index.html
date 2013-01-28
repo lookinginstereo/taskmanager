@@ -9,12 +9,27 @@
 <body>
 <div id="container">
     <div id="headerArea" class="clear-float">
-        <div id="logo"> This would contain a logo for title of the site </div>
-        <div id="login"> small area for logging in</div>
+        <div id="logo">
+            <h1>OCCAL</h1>
+            <h2>maximizing/obsessing over time</h2>
+        </div>
+        <div id="login">
+            <form>
+                <fieldset class="field-input">
+                    <label for="login-username">Username</label>
+                    <input type="text" name="login-username" id="login-username" placeholder="Username"></input>
+                </fieldset>
+                <fieldset class="field-input">
+                    <label for="login-password">Password</label>
+                    <input type="password" name="login-password" id="login-password" placeholder="Password"></input>
+                </fieldset>
+                <button id="doLogin">Login</button>
+            </form>
+        </div>
         <div class="clear-float"></div>
     </div>
     <div id="current-tasklist" class="clear-float">
-        <div class="toDoHeader">Date and Daily-Theme</div>
+        <div class="task-header">Date and Daily-Theme</div>
         <ul>
             <li class="task-parent">
                 <div class="task-info"> Task A </div>

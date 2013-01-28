@@ -6,7 +6,7 @@
     }
 
     #logo {
-        width: 60%; /*fixed sized "large" logo?*/
+        width: 50%; /*fixed sized "large" logo?*/
         height: 6em; /*this will be auto when there is a logo*/
         float: left;
         margin:0;
@@ -14,16 +14,20 @@
 
     #login {
         height: 6em;
-        width: 38%; 
+        width: 48%; 
         float:left;
         margin: 0 0 0 1%;
+    }
+
+    .field-input input {
+        width: 55%;
     }
 
     .current-tasklist {
         margin: 0 0 1em 0;
     }
 
-    .toDoHeader {
+    .task-header {
         height: 4em;
         margin: 0 0 .5em 0;
     }
