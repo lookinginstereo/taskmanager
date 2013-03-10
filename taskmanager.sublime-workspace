@@ -1,0 +1,399 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "api/server.js",
+			"settings":
+			{
+				"buffer_size": 1159,
+				"line_ending": "Unix",
+				"name": "var express = require('express');"
+			}
+		},
+		{
+			"file": "api/db.js",
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/schemas.js",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/models.js",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/app.rb",
+			"settings":
+			{
+				"buffer_size": 765,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mmehlhope/Sites/BossBlueprint/js/views.js",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/footer.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/saveModal.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/404.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/js/setup.js",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/welcomeScreen.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/css/vader/_jquery-ui-1.9.1.custom.scss",
+		"/Users/mmehlhope/Sites/BossBlueprint/css/_icons.scss",
+		"/Users/mmehlhope/Sites/BossBlueprint/css/icons.css",
+		"/Users/mmehlhope/Sites/BossBlueprint/css/bossblueprint.css",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/application.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/.htaccess",
+		"/Users/mmehlhope/Sites/BossBlueprint/templates/header.html",
+		"/Users/mmehlhope/Sites/BossBlueprint/img/filters.svg",
+		"/Users/mmehlhope/Desktop/.htaccess",
+		"/Users/mmehlhope/Sites/BossBlueprint/node/admin/js/admin.js",
+		"/Users/mmehlhope/Sites/BossBlueprint/logs/node.log",
+		"/Users/mmehlhope/Sites/Boss Blueprint/js/app-prod.js",
+		"/Users/mmehlhope/Sites/Boss Blueprint/js/app.js",
+		"/Users/mmehlhope/Sites/Boss Blueprint/js/views.js",
+		"/Users/mmehlhope/Sites/Boss Blueprint/js/setup.js",
+		"/Users/mmehlhope/Sites/Boss Blueprint/templates/saveModal.html",
+		"/Users/mmehlhope/Sites/Boss Blueprint/index.html",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/_bossblueprint.scss",
+		"/Users/mmehlhope/Sites/BossBlueprint/node/admin/index.html",
+		"/Users/mmehlhope/Sites/Boss Blueprint/node/admin/index.html",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/app.scss",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/vader/_jquery-ui-1.9.1.custom.scss",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/_icons.scss",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/bossblueprint.css",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/app.css",
+		"/Users/mmehlhope/Sites/Boss Blueprint/js/app-ck.js",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/_chosen.scss",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/icons.css",
+		"/Users/mmehlhope/Sites/Boss Blueprint/css/_reset.scss",
+		"/Users/mmehlhope/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/mmehlhope/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mmehlhope/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"34",
+			"tools",
+			"tool",
+			"toolslist",
+			"document",
+			"welcome",
+			"notFound",
+			"0.6s ease",
+			"saveModal",
+			"removeClass('disabled",
+			"view.options.game",
+			"game",
+			"gameName",
+			"saveModal",
+			"save",
+			"inputSele",
+			"$.get",
+			"save",
+			"savemodal",
+			"disabled",
+			"console.log",
+			"url(images",
+			"no-repeat;",
+			"display",
+			"no-repeat;",
+			"background:transparent url('/img/icons.png')",
+			"general"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0.2s linear",
+			"url(/css/vader/images",
+			"",
+			"@include iconBackgroundImage(0, 0);"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "api/server.js",
+					"settings":
+					{
+						"buffer_size": 1159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var express = require('express');",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "api/db.js",
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "api/schemas.js",
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "api/models.js",
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "api/app.rb",
+					"settings":
+					{
+						"buffer_size": 765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/mmehlhope/Sites/BBP.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}
