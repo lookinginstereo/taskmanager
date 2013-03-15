@@ -1,41 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TEST PAGE</title>
+  <title>API Test Page</title>
+  <style type="text/css">
+  #tasks {
+      margin-top:30px;
+      width:100%;
+  }
+  </style>
 </head>
 <body>
-<input type="text" id="listname">
+<input type="text" id="listname" placeholder="New task list name">
 <button id="createNewList">Create task list</button><br>
-<button id="getAllLists">Get All Lists</button><br>
-<input type="text" id="newname" placeholder="Name"> <input type="text" id="id" placeholder="Id"> <button id="updateExistingList">Update Existing</button><br>
-<div class="tasks"></div>
+<input type="text" id="listID" placeholder="Task List ID">
+<button id="deleteList">Delete task list</button><br>
+<input type="text" id="newname" placeholder="Name"> <input type="text" id="id" placeholder="Id"><button id="updateExistingList">Change Task Name</button><br><br>
+<button id="getAllLists">Refresh Table of Task Lists</button><br>
+<table id="tasks">
+<thead style="font-weight:bold;">
+<tr>
+<td>Name</td>
+<td>ID</td>
+<td># of Child Tasks</td>
+<td></td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
 <script>
+$(function(){
+  $('#getAllLists').click();
+});
 
 $('#createNewList').on('click', function() {
-    var listname = $('#listname').val();
-    $.post("http://task.local:3000/lists/create/"+listname, "", function(data) {
-      console.log(data);
-    });
+  var listname = $('#listname').val();
+  $.post("http://task.local:3000/list/create/"+listname, "", function(data) {
+    $('#getAllLists').click();
+  });
+});
+
+$('#deleteList').on('click', function() {
+  var id = $('#listID').val();
+
+  $.post('http://task.local:3000/list/delete/'+id, function(data) {
+    $('#getAllLists').click();
+  });
 });
 
 $('#getAllLists').on('click', function() {
-    $.getJSON( "http://task.local:3000/lists/all", function(data) {
-        console.log(data);
-    });
+  $.getJSON( "http://task.local:3000/list/all", function(data) {
+
+    var table = $('#tasks'),
+        tbody = table.find('tbody');
+
+    tbody.empty();
+
+    for (var i = 0; i < data.length; i++) {
+
+        var current = data[i],
+            name = current.name,
+            id = current._id,
+            childTasks = current.childTasks.length;
+
+        var tableText = '<tr> \
+            <td>'+name+'</td> \
+            <td>'+id+'</td> \
+            <td>'+childTasks+'</td> \
+            <td><button class="update">Update</button></td> \
+            </tr>';
+
+        tbody.append(tableText);
+    }
+  });
 });
 
 $('#updateExistingList').on('click', function() {
-    var newName = $('#newname').val(),
-        id = $('#id').val(),
-        data = {
-          "name" : newName
-        };
+  var newName = $('#newname').val(),
+      id = $('#id').val(),
+      data = {
+        "name" : newName
+      };
 
-    $.post( "http://task.local:3000/lists/update/"+id, data, function(data) {
-        console.log(data);
-    });
+  $.post( "http://task.local:3000/list/update/"+id, data, function(data) {
+      console.log(data);
+  });
 });
 
 </script>

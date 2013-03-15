@@ -19,10 +19,24 @@ app.configure(function(){
    
 });
 
-app.get('/lists/all', API.getAllTaskLists); // get all currently available task lists
-app.post('/lists/create/:name', API.createNewList); // create a new task list
-app.post('/lists/update/:id', API.updateListNameById); // Update list
-app.delete('/lists/delete/:id', API.deleteListById); // delete a specific lsit
+
+//
+// LIST CALLS
+//
+
+app.get('/list/all', API.getAllTaskLists); // get all currently available task lists
+app.post('/list/create/:name', API.createNewList); // create a new task list
+app.post('/list/update/:id', API.updateListNameById); // Update a specific list
+app.post('/list/delete/:id', API.deleteListById); // delete a specific list
+
+//
+// TASK CALLS
+//
+
+app.get('/list/:id/tasks', API.getAllTasksForList); // get all currently available tasks for a list
+// app.post('/list/create/:listID/tasks/:name', API.createNewTaskForList); // create new task for a specific list
+// app.post('/list/update/:listID/tasks/:taskID/:name', API.updateTaskNameById); // update task name by id for a specific list
+// app.post('/list/delete/:listID/tasks/:taskID', API.deleteTaskById); // remove a task from a specific list
 
 
 app.listen(3000, "task.local");

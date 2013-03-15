@@ -1,8 +1,6 @@
 var Schemas = require('./schemas.js'),
     List = Schemas.List;
 
-
-
 exports.getAllTaskLists = function(req, res) 
 {
   res.contentType('application/json');
@@ -21,6 +19,7 @@ exports.getAllTaskLists = function(req, res)
 
 };
 
+
 exports.createNewList =  function(req, res) 
 {
   var newName = req.params.name,
@@ -28,7 +27,6 @@ exports.createNewList =  function(req, res)
 
   newList.save(function (errors, newList) {
     if (errors) {
-      console.log(errors);
       res.status(500);
       res.send('Shit is broke, yo');
       res.end();
@@ -41,6 +39,7 @@ exports.createNewList =  function(req, res)
     
   });
 };
+
 
 exports.updateListNameById = function(req, res) 
 {
@@ -55,6 +54,7 @@ exports.updateListNameById = function(req, res)
       else
         res.status(200);
         res.send(list);
+        res.end();
     });
 
   }
@@ -64,19 +64,60 @@ exports.updateListNameById = function(req, res)
 
 };
 
+
 exports.deleteListById = function(req, res) 
 {
   var id = req.params.id;
 
-  List.find({_id: id}, function(err, list) {
+  List.findByIdAndRemove(id, function(err, list){
     if (err) {
-      res.status(404);
+      res.status(500);
       res.send(err);
+      res.end();
     }
     else {
       res.status(200);
-      res.send(list);
-    }   
+      res.end();
+    }
+  })
+
+};
+
+exports.getAllTasksForList = function(req, res)
+{
+  var listID = req.params.id;
+
+  List.findById(listID, function(err, list) {
+    if (err) {
+      res.status(500);
+      res.send('there was an error getting the list by that the id ' + listID);
+      res.end();
+    }
+    else {
+      res.send(list.childTasks);
+      res.end();
+    }
+
+  });
+
+};
+
+
+exports.createNewTaskForList = function(req, res)
+{
+  var listID = req.params.id;
+
+  List.findById(listID, function(err, list) {
+    if (err) {
+      res.status(500);
+      res.send('there was an error getting the list by that the id ' + listID);
+      res.end();
+    }
+    else {
+      list.childTasks.push
+      res.end();
+    }
+
   });
 
 };
