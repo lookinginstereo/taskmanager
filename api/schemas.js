@@ -6,7 +6,7 @@ var Mongoose = require('mongoose'),
 
 var ListSchema = new Schema({
   name: String,
-  children: [TaskSchema]
+  childTasks: [TaskSchema]
 });
 
 var TaskSchema = new Schema({
@@ -15,8 +15,6 @@ var TaskSchema = new Schema({
 });
 
 var List = Mongoose.model('List', ListSchema);
-
-// var Task = Mongoose.model('Task', TaskSchema);
 
 module.exports = {
   List: List

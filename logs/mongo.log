@@ -16,3 +16,579 @@ Thu Mar 14 15:42:45 [initandlisten] shutdown: final commit...
 Thu Mar 14 15:42:45 [initandlisten] shutdown: closing all files...
 Thu Mar 14 15:42:45 [initandlisten] closeAllFiles() finished
 Thu Mar 14 15:42:45 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:03:21 [initandlisten] MongoDB starting : pid=20383 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:03:21 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:03:21 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:03:21 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:03:21 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:03:21 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:03:21 [initandlisten] recover begin
+Thu Mar 14 22:03:21 [initandlisten] recover lsn: 3810457
+Thu Mar 14 22:03:21 [initandlisten] recover /Users/mmehlhope/Sites/taskmanager/mongodb/journal/j._0
+Thu Mar 14 22:03:21 [initandlisten] recover skipping application of section seq:2857752 < lsn:3810457
+Thu Mar 14 22:03:21 [initandlisten] recover cleaning up
+Thu Mar 14 22:03:21 [initandlisten] removeJournalFiles
+Thu Mar 14 22:03:21 [initandlisten] recover done
+Thu Mar 14 22:03:21 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:03:21 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:03:21 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:03:21 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:03:21 [initandlisten] now exiting
+Thu Mar 14 22:03:21 dbexit: 
+Thu Mar 14 22:03:21 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:03:21 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:03:21 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:03:21 [initandlisten] journalCleanup...
+Thu Mar 14 22:03:21 [initandlisten] removeJournalFiles
+Thu Mar 14 22:03:21 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:03:21 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:03:43 [initandlisten] MongoDB starting : pid=20407 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:03:43 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:03:43 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:03:43 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:03:43 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:03:43 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:03:43 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:03:43 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:03:43 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:03:43 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:03:43 [initandlisten] now exiting
+Thu Mar 14 22:03:43 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:03:43 dbexit: 
+Thu Mar 14 22:03:43 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:03:43 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:03:43 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:03:43 [initandlisten] journalCleanup...
+Thu Mar 14 22:03:43 [initandlisten] removeJournalFiles
+Thu Mar 14 22:03:43 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:03:43 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:07:16 [initandlisten] MongoDB starting : pid=20436 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:07:16 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:07:16 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:07:16 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:07:16 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:07:16 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:07:16 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:07:16 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:07:16 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:07:16 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:07:16 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:07:16 [initandlisten] now exiting
+Thu Mar 14 22:07:16 dbexit: 
+Thu Mar 14 22:07:16 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:07:16 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:07:16 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:07:16 [initandlisten] journalCleanup...
+Thu Mar 14 22:07:16 [initandlisten] removeJournalFiles
+Thu Mar 14 22:07:16 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:07:16 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:07:45 [initandlisten] MongoDB starting : pid=20465 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:07:45 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:07:45 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:07:45 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:07:45 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:07:45 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:07:45 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:07:45 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:07:45 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:07:45 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:07:45 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:07:45 [initandlisten] now exiting
+Thu Mar 14 22:07:45 dbexit: 
+Thu Mar 14 22:07:45 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:07:45 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:07:45 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:07:45 [initandlisten] journalCleanup...
+Thu Mar 14 22:07:45 [initandlisten] removeJournalFiles
+Thu Mar 14 22:07:45 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:07:45 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:08:30 [initandlisten] MongoDB starting : pid=20492 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:08:30 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:08:30 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:08:30 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:08:30 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:08:30 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:08:30 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:08:30 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:08:30 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:08:30 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:08:30 [initandlisten] now exiting
+Thu Mar 14 22:08:30 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:08:30 dbexit: 
+Thu Mar 14 22:08:30 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:08:30 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:08:30 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:08:30 [initandlisten] journalCleanup...
+Thu Mar 14 22:08:30 [initandlisten] removeJournalFiles
+Thu Mar 14 22:08:30 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:08:30 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:13:01 [initandlisten] MongoDB starting : pid=20528 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:13:01 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:13:01 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:13:01 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:13:01 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:13:01 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:13:01 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:13:01 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:13:01 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:13:01 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:13:01 [initandlisten] now exiting
+Thu Mar 14 22:13:01 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:13:01 dbexit: 
+Thu Mar 14 22:13:01 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:13:01 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:13:01 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:13:01 [initandlisten] journalCleanup...
+Thu Mar 14 22:13:01 [initandlisten] removeJournalFiles
+Thu Mar 14 22:13:01 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:13:01 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:34:50 [initandlisten] MongoDB starting : pid=20599 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:34:50 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:34:50 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:34:50 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:34:50 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:34:50 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:34:50 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:34:50 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:34:50 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:34:50 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:34:50 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:34:50 [initandlisten] now exiting
+Thu Mar 14 22:34:50 dbexit: 
+Thu Mar 14 22:34:50 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:34:50 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:34:50 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:34:50 [initandlisten] journalCleanup...
+Thu Mar 14 22:34:50 [initandlisten] removeJournalFiles
+Thu Mar 14 22:34:50 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:34:50 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:39:32 [initandlisten] MongoDB starting : pid=22943 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:39:32 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:39:32 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:39:32 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:39:32 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:39:32 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:39:32 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:39:32 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:39:32 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:39:32 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:39:32 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:39:32 [initandlisten] now exiting
+Thu Mar 14 22:39:32 dbexit: 
+Thu Mar 14 22:39:32 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:39:32 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:39:32 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:39:32 [initandlisten] journalCleanup...
+Thu Mar 14 22:39:32 [initandlisten] removeJournalFiles
+Thu Mar 14 22:39:32 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:39:32 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:44:24 [initandlisten] MongoDB starting : pid=22972 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:44:24 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:44:24 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:44:24 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:44:24 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:44:24 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:44:24 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:44:24 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:44:24 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:44:24 [initandlisten] now exiting
+Thu Mar 14 22:44:24 dbexit: 
+Thu Mar 14 22:44:24 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:44:24 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:44:24 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:44:24 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:44:24 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:44:24 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:44:24 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:44:24 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:44:24 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:44:24 [initandlisten] journalCleanup...
+Thu Mar 14 22:44:24 [initandlisten] removeJournalFiles
+Thu Mar 14 22:44:24 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:44:24 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:44:24 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:44:34 [initandlisten] MongoDB starting : pid=22996 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:44:34 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:44:34 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:44:34 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:44:34 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:44:34 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:44:34 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:44:34 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:44:34 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:44:34 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:44:34 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:44:34 [initandlisten] now exiting
+Thu Mar 14 22:44:34 dbexit: 
+Thu Mar 14 22:44:34 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:44:34 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:44:34 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:44:34 [initandlisten] journalCleanup...
+Thu Mar 14 22:44:34 [initandlisten] removeJournalFiles
+Thu Mar 14 22:44:34 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:44:34 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:46:52 [initandlisten] MongoDB starting : pid=23025 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:46:52 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:46:52 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:46:52 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:46:52 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:46:52 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:46:52 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:46:52 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:46:52 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:46:52 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:46:52 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:46:52 [initandlisten] now exiting
+Thu Mar 14 22:46:52 dbexit: 
+Thu Mar 14 22:46:52 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:46:52 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:46:52 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:46:52 [initandlisten] journalCleanup...
+Thu Mar 14 22:46:52 [initandlisten] removeJournalFiles
+Thu Mar 14 22:46:52 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:46:52 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:47:42 [initandlisten] MongoDB starting : pid=23049 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:47:42 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:47:42 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:47:42 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:47:42 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:47:42 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:47:42 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:47:42 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:47:42 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:47:42 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:47:42 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:47:42 [initandlisten] now exiting
+Thu Mar 14 22:47:42 dbexit: 
+Thu Mar 14 22:47:42 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:47:42 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:47:42 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:47:42 [initandlisten] journalCleanup...
+Thu Mar 14 22:47:42 [initandlisten] removeJournalFiles
+Thu Mar 14 22:47:42 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:47:42 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:47:57 [initandlisten] MongoDB starting : pid=23073 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:47:57 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:47:57 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:47:57 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:47:57 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:47:57 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:47:57 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:47:57 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:47:57 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:47:57 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:47:57 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:47:57 [initandlisten] now exiting
+Thu Mar 14 22:47:57 dbexit: 
+Thu Mar 14 22:47:57 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:47:57 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:47:57 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:47:57 [initandlisten] journalCleanup...
+Thu Mar 14 22:47:57 [initandlisten] removeJournalFiles
+Thu Mar 14 22:47:57 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:47:57 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:48:21 [initandlisten] MongoDB starting : pid=23097 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:48:21 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:48:21 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:48:21 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:48:21 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:48:21 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:48:21 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:48:21 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:48:21 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:48:21 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:48:21 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:48:21 [initandlisten] now exiting
+Thu Mar 14 22:48:21 dbexit: 
+Thu Mar 14 22:48:21 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:48:21 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:48:21 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:48:21 [initandlisten] journalCleanup...
+Thu Mar 14 22:48:21 [initandlisten] removeJournalFiles
+Thu Mar 14 22:48:21 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:48:21 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:48:46 [initandlisten] MongoDB starting : pid=23121 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:48:46 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:48:46 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:48:46 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:48:46 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:48:46 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:48:46 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:48:46 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:48:46 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:48:46 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:48:46 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:48:46 [initandlisten] now exiting
+Thu Mar 14 22:48:46 dbexit: 
+Thu Mar 14 22:48:46 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:48:46 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:48:46 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:48:46 [initandlisten] journalCleanup...
+Thu Mar 14 22:48:46 [initandlisten] removeJournalFiles
+Thu Mar 14 22:48:46 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:48:46 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:50:17 [initandlisten] MongoDB starting : pid=23145 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:50:17 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:50:17 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:50:17 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:50:17 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:50:17 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:50:17 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:50:17 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:50:17 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:50:17 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:50:17 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:50:17 [initandlisten] now exiting
+Thu Mar 14 22:50:17 dbexit: 
+Thu Mar 14 22:50:17 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:50:17 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:50:17 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:50:17 [initandlisten] journalCleanup...
+Thu Mar 14 22:50:17 [initandlisten] removeJournalFiles
+Thu Mar 14 22:50:17 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:50:17 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:50:57 [initandlisten] MongoDB starting : pid=23169 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:50:57 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:50:57 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:50:57 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:50:57 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:50:57 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:50:57 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:50:57 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:50:57 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:50:57 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:50:57 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:50:57 [initandlisten] now exiting
+Thu Mar 14 22:50:57 dbexit: 
+Thu Mar 14 22:50:57 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:50:57 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:50:57 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:50:57 [initandlisten] journalCleanup...
+Thu Mar 14 22:50:57 [initandlisten] removeJournalFiles
+Thu Mar 14 22:50:57 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:50:57 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:55:19 [initandlisten] MongoDB starting : pid=23202 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:55:19 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:55:19 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:55:19 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:55:19 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:55:19 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:55:19 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:55:19 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:55:19 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:55:19 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:55:19 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:55:19 [initandlisten] now exiting
+Thu Mar 14 22:55:19 dbexit: 
+Thu Mar 14 22:55:19 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:55:19 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:55:19 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:55:19 [initandlisten] journalCleanup...
+Thu Mar 14 22:55:19 [initandlisten] removeJournalFiles
+Thu Mar 14 22:55:19 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:55:19 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Mar 14 22:56:07 [initandlisten] MongoDB starting : pid=23231 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Thu Mar 14 22:56:07 [initandlisten] db version v2.2.2, pdfile version 4.5
+Thu Mar 14 22:56:07 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Thu Mar 14 22:56:07 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Mar 14 22:56:07 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Thu Mar 14 22:56:07 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Thu Mar 14 22:56:07 [initandlisten] recover : no journal files present, no recovery needed
+Thu Mar 14 22:56:07 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Thu Mar 14 22:56:07 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Thu Mar 14 22:56:07 [initandlisten] ERROR:   addr already in use
+Thu Mar 14 22:56:07 [websvr] ERROR:   addr already in use
+Thu Mar 14 22:56:07 [initandlisten] now exiting
+Thu Mar 14 22:56:07 dbexit: 
+Thu Mar 14 22:56:07 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: final commit...
+Thu Mar 14 22:56:07 [initandlisten] shutdown: closing all files...
+Thu Mar 14 22:56:07 [initandlisten] closeAllFiles() finished
+Thu Mar 14 22:56:07 [initandlisten] journalCleanup...
+Thu Mar 14 22:56:07 [initandlisten] removeJournalFiles
+Thu Mar 14 22:56:07 [initandlisten] shutdown: removing fs lock...
+Thu Mar 14 22:56:07 dbexit: really exiting now
