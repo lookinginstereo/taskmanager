@@ -1,5 +1,4 @@
 var Schemas = require('./schemas.js'),
-    Mongoose = require('./schemas.js'),
     List = Schemas.List;
 
 
@@ -62,7 +61,7 @@ exports.updateListNameById = function(req, res)
   else {
     res.status(204) // no change to content
   }
-  
+
 };
 
 exports.deleteListById = function(req, res) 

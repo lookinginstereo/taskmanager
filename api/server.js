@@ -1,6 +1,5 @@
 var Express = require('express'),
     Database = require('./db.js'),
-    Mongoose = require('mongoose'),
     API = require('./routeMethods.js'),
     app = Express();
 
@@ -14,7 +13,7 @@ app.configure(function(){
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
   });
-  
+
   // enable req.body parsing
   app.use(Express.bodyParser());
    
