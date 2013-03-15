@@ -1,14 +1,28 @@
 var Express = require('express'),
     Schemas = require('./schemas.js'),
     List = Schemas.List,
-    Task = Schemas.Task,
     Database = require('./db.js'),
+    Mongoose = require('mongoose'),
     app = Express();
+
+
+app.configure(function(){
+
+  // allow cross domain access
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
+   
+});
+
+
 
 // get all currently available task lists
 app.get('/lists', function(req, res)
 {
-
   // set the content type for the browser
   res.contentType('application/json');
 
@@ -35,12 +49,12 @@ app.post('/lists/:name', function(req, res)
   newList.save(function (errors, newList) {
     if (errors) {
       console.log(errors);
-      res.statusCode = 500;
+      res.status(500);
       res.send('Shit is broke, yo');
       res.end();
     }
     else {
-      res.statusCode = 200;
+      res.status(200);
       res.send('Successfully created '+newList);
       res.end();
     }
@@ -49,9 +63,20 @@ app.post('/lists/:name', function(req, res)
 });
 
 // delete a specific task list
-app.delete('/lists/:id', function(req, res) 
+app.get('/lists/:id', function(req, res) 
 {
+  var id = req.params.id;
 
+      List.find({_id: id}, function(err, list) {
+        if (err) {
+          res.status(404);
+          res.send(err);
+        }
+        else {
+          res.send(list);
+        }
+        
+      });
 });
 
 app.listen(3000, "task.local");

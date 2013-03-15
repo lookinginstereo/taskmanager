@@ -1,0 +1,153 @@
+Thu Mar 14 14:33:54 [initandlisten] MongoDB starting : pid=45897 port=27017 dbpath=/Users/mmehlhop/Sites/taskapp/mongodb 64-bit host=Ricochet.local
+Thu Mar 14 14:33:54 [initandlisten] db version v2.0.5, pdfile version 4.5
+Thu Mar 14 14:33:54 [initandlisten] git version: 1bb4de4630302fad8af53824ca4f627db490b753
+Thu Mar 14 14:33:54 [initandlisten] build info: Darwin erh2.10gen.cc 9.8.0 Darwin Kernel Version 9.8.0: Wed Jul 15 16:55:01 PDT 2009; root:xnu-1228.15.4~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_40
+Thu Mar 14 14:33:54 [initandlisten] options: { dbpath: "/Users/mmehlhop/Sites/taskapp/mongodb", logpath: "/Users/mmehlhop/Sites/taskapp/logs/mongo.log" }
+Thu Mar 14 14:33:54 [initandlisten] exception in initAndListen: 10310 Unable to acquire lock for lockfilepath: /Users/mmehlhop/Sites/taskapp/mongodb/mongod.lock, terminating
+Thu Mar 14 14:33:54 dbexit: 
+Thu Mar 14 14:33:54 [initandlisten] shutdown: going to close listening sockets...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: going to flush diaglog...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: going to close sockets...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: waiting for fs preallocator...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: lock for final commit...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: final commit...
+Thu Mar 14 14:33:54 [initandlisten] shutdown: closing all files...
+ThuThu Mar 14 14:34:00 [clientcursormon] mem (MB) res:14 virt:2430 mapped:0
+Thu Mar 14 14:39:00 [clientcursormon] mem (MB) res:14 virt:2430 mapped:0
+Thu Mar 14 14:44:00 [clientcursormon] mem (MB) res:14 virt:2430 mapped:0
+Thu Mar 14 14:49:00 [clientcursormon] mem (MB) res:14 virt:2430 mapped:0
+Thu Mar 14 14:54:00 [clientcursormon] mem (MB) res:14 virt:2430 mapped:0
+Thu Mar 14 14:55:02 [initandlisten] connection accepted from 127.0.0.1:60672 #1
+Thu Mar 14 14:55:11 [conn1] end connection 127.0.0.1:60672
+Thu Mar 14 14:55:13 [initandlisten] connection accepted from 127.0.0.1:60678 #2
+Thu Mar 14 14:55:14 [conn2] end connection 127.0.0.1:60678
+Thu Mar 14 14:56:19 [initandlisten] connection accepted from 127.0.0.1:60695 #3
+Thu Mar 14 14:56:19 [initandlisten] connection accepted from 127.0.0.1:60696 #4
+Thu Mar 14 14:56:19 [initandlisten] connection accepted from 127.0.0.1:60697 #5
+Thu Mar 14 14:56:19 [initandlisten] connection accepted from 127.0.0.1:60698 #6
+Thu Mar 14 14:56:19 [initandlisten] connection accepted from 127.0.0.1:60699 #7
+Thu Mar 14 14:56:36 [FileAllocator] allocating new datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.ns, filling with zeroes...
+Thu Mar 14 14:56:36 [FileAllocator] creating directory /Users/mmehlhop/Sites/taskapp/mongodb/_tmp
+Thu Mar 14 14:56:37 [FileAllocator] done allocating datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.ns, size: 16MB,  took 0.246 secs
+Thu Mar 14 14:56:37 [FileAllocator] allocating new datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.0, filling with zeroes...
+Thu Mar 14 14:56:37 [FileAllocator] done allocating datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.0, size: 64MB,  took 0.806 secs
+Thu Mar 14 14:56:37 [FileAllocator] allocating new datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.1, filling with zeroes...
+Thu Mar 14 14:56:37 [conn5] build index secondtest.lists { _id: 1 }
+Thu Mar 14 14:56:38 [conn5] build index done 0 records 0.06 secs
+Thu Mar 14 14:56:38 [conn5] insert secondtest.lists 1220ms
+Thu Mar 14 14:56:39 [FileAllocator] done allocating datafile /Users/mmehlhop/Sites/taskapp/mongodb/secondtest.1, size: 128MB,  took 1.711 secs
+Thu Mar 14 14:59:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:04:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:09:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:14:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:19:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:23:07 [conn4] end connection 127.0.0.1:60696
+Thu Mar 14 15:23:07 [conn3] end connection 127.0.0.1:60695
+Thu Mar 14 15:23:07 [conn7] end connection 127.0.0.1:60699
+Thu Mar 14 15:23:07 [conn6] end connection 127.0.0.1:60698
+Thu Mar 14 15:23:07 [conn5] end connection 127.0.0.1:60697
+Thu Mar 14 15:23:09 [initandlisten] connection accepted from 127.0.0.1:61276 #8
+Thu Mar 14 15:23:09 [initandlisten] connection accepted from 127.0.0.1:61277 #9
+Thu Mar 14 15:23:09 [initandlisten] connection accepted from 127.0.0.1:61278 #10
+Thu Mar 14 15:23:09 [initandlisten] connection accepted from 127.0.0.1:61279 #11
+Thu Mar 14 15:23:09 [initandlisten] connection accepted from 127.0.0.1:61280 #12
+Thu Mar 14 15:24:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:29:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:30:15 [conn10] end connection 127.0.0.1:61278
+Thu Mar 14 15:30:15 [conn8] end connection 127.0.0.1:61276
+Thu Mar 14 15:30:15 [conn12] end connection 127.0.0.1:61280
+Thu Mar 14 15:30:15 [conn9] end connection 127.0.0.1:61277
+Thu Mar 14 15:30:15 [conn11] end connection 127.0.0.1:61279
+Thu Mar 14 15:30:29 [initandlisten] connection accepted from 127.0.0.1:61345 #13
+Thu Mar 14 15:30:29 [initandlisten] connection accepted from 127.0.0.1:61346 #14
+Thu Mar 14 15:30:29 [initandlisten] connection accepted from 127.0.0.1:61347 #15
+Thu Mar 14 15:30:29 [initandlisten] connection accepted from 127.0.0.1:61348 #16
+Thu Mar 14 15:30:29 [initandlisten] connection accepted from 127.0.0.1:61349 #17
+Thu Mar 14 15:32:04 [conn16] end connection 127.0.0.1:61348
+Thu Mar 14 15:32:04 [conn17] end connection 127.0.0.1:61349
+Thu Mar 14 15:32:04 [conn14] end connection 127.0.0.1:61346
+Thu Mar 14 15:32:04 [conn13] end connection 127.0.0.1:61345
+Thu Mar 14 15:32:04 [conn15] end connection 127.0.0.1:61347
+Thu Mar 14 15:32:06 [initandlisten] connection accepted from 127.0.0.1:61362 #18
+Thu Mar 14 15:32:06 [initandlisten] connection accepted from 127.0.0.1:61363 #19
+Thu Mar 14 15:32:06 [initandlisten] connection accepted from 127.0.0.1:61364 #20
+Thu Mar 14 15:32:06 [initandlisten] connection accepted from 127.0.0.1:61365 #21
+Thu Mar 14 15:32:06 [initandlisten] connection accepted from 127.0.0.1:61366 #22
+Thu Mar 14 15:34:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:36:10 [conn18] end connection 127.0.0.1:61362
+Thu Mar 14 15:36:10 [conn21] end connection 127.0.0.1:61365
+Thu Mar 14 15:36:10 [conn22] end connection 127.0.0.1:61366
+Thu Mar 14 15:36:10 [conn20] end connection 127.0.0.1:61364
+Thu Mar 14 15:36:10 [conn19] end connection 127.0.0.1:61363
+Thu Mar 14 15:36:12 [initandlisten] connection accepted from 127.0.0.1:61376 #23
+Thu Mar 14 15:36:12 [initandlisten] connection accepted from 127.0.0.1:61377 #24
+Thu Mar 14 15:36:12 [initandlisten] connection accepted from 127.0.0.1:61378 #25
+Thu Mar 14 15:36:12 [initandlisten] connection accepted from 127.0.0.1:61379 #26
+Thu Mar 14 15:36:12 [initandlisten] connection accepted from 127.0.0.1:61380 #27
+Thu Mar 14 15:36:41 [conn27] end connection 127.0.0.1:61380
+Thu Mar 14 15:36:41 [conn26] end connection 127.0.0.1:61379
+Thu Mar 14 15:36:41 [conn25] end connection 127.0.0.1:61378
+Thu Mar 14 15:36:41 [conn24] end connection 127.0.0.1:61377
+Thu Mar 14 15:36:41 [conn23] end connection 127.0.0.1:61376
+Thu Mar 14 15:36:43 [initandlisten] connection accepted from 127.0.0.1:61384 #28
+Thu Mar 14 15:36:43 [initandlisten] connection accepted from 127.0.0.1:61385 #29
+Thu Mar 14 15:36:43 [initandlisten] connection accepted from 127.0.0.1:61386 #30
+Thu Mar 14 15:36:43 [initandlisten] connection accepted from 127.0.0.1:61387 #31
+Thu Mar 14 15:36:43 [initandlisten] connection accepted from 127.0.0.1:61388 #32
+Thu Mar 14 15:39:00 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:40:27 [conn28] end connection 127.0.0.1:61384
+Thu Mar 14 15:40:27 [conn32] end connection 127.0.0.1:61388
+Thu Mar 14 15:40:27 [conn31] end connection 127.0.0.1:61387
+Thu Mar 14 15:40:27 [conn30] end connection 127.0.0.1:61386
+Thu Mar 14 15:40:27 [conn29] end connection 127.0.0.1:61385
+Thu Mar 14 15:41:10 [initandlisten] connection accepted from 127.0.0.1:61441 #33
+Thu Mar 14 15:41:10 [initandlisten] connection accepted from 127.0.0.1:61442 #34
+Thu Mar 14 15:41:10 [initandlisten] connection accepted from 127.0.0.1:61443 #35
+Thu Mar 14 15:41:10 [initandlisten] connection accepted from 127.0.0.1:61444 #36
+Thu Mar 14 15:41:10 [initandlisten] connection accepted from 127.0.0.1:61445 #37
+Thu Mar 14 15:42:05 [conn36] end connection 127.0.0.1:61444
+Thu Mar 14 15:42:05 [conn33] end connection 127.0.0.1:61441
+Thu Mar 14 15:42:05 [conn37] end connection 127.0.0.1:61445
+Thu Mar 14 15:42:05 [conn35] end connection 127.0.0.1:61443
+Thu Mar 14 15:42:05 [conn34] end connection 127.0.0.1:61442
+Thu Mar 14 15:42:07 [initandlisten] connection accepted from 127.0.0.1:61449 #38
+Thu Mar 14 15:42:07 [initandlisten] connection accepted from 127.0.0.1:61450 #39
+Thu Mar 14 15:42:07 [initandlisten] connection accepted from 127.0.0.1:61451 #40
+Thu Mar 14 15:42:07 [initandlisten] connection accepted from 127.0.0.1:61452 #41
+Thu Mar 14 15:42:07 [initandlisten] connection accepted from 127.0.0.1:61453 #42
+Thu Mar 14 15:42:44 [conn41] end connection 127.0.0.1:61452
+Thu Mar 14 15:42:44 [conn39] end connection 127.0.0.1:61450
+Thu Mar 14 15:42:44 [conn42] end connection 127.0.0.1:61453
+Thu Mar 14 15:42:44 [conn40] end connection 127.0.0.1:61451
+Thu Mar 14 15:42:44 [conn38] end connection 127.0.0.1:61449
+Thu Mar 14 15:42:45 [initandlisten] connection accepted from 127.0.0.1:61456 #43
+Thu Mar 14 15:42:45 [initandlisten] connection accepted from 127.0.0.1:61457 #44
+Thu Mar 14 15:42:45 [initandlisten] connection accepted from 127.0.0.1:61458 #45
+Thu Mar 14 15:42:45 [initandlisten] connection accepted from 127.0.0.1:61459 #46
+Thu Mar 14 15:42:45 [initandlisten] connection accepted from 127.0.0.1:61460 #47
+Thu Mar 14 15:45:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:50:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 15:55:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:00:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:05:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:10:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:15:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:20:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:25:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:30:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:35:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:40:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:45:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:50:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 16:55:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 17:00:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 17:05:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 17:10:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 17:15:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 17:20:55 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 21:51:12 [clientcursormon] mem (MB) res:15 virt:2649 mapped:80
+Thu Mar 14 21:51:46 [conn44] end connection 127.0.0.1:61457
+Thu Mar 14 21:51:46 [conn47] end connection 127.0.0.1:61460
+Thu Mar 14 21:51:46 [conn46] end connection 127.0.0.1:61459
+Thu Mar 14 21:51:46 [conn43] end connection 127.0.0.1:61456
+Thu Mar 14 21:51:46 [conn45] end connection 127.0.0.1:61458

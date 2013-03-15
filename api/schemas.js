@@ -6,19 +6,18 @@ var Mongoose = require('mongoose'),
 
 var ListSchema = new Schema({
   name: String,
-  children: []
+  children: [TaskSchema]
 });
-
-var List = Mongoose.model('List', ListSchema);
 
 var TaskSchema = new Schema({
   name: String,
   complete: Boolean
 });
 
-var Task = Mongoose.model('Task', TaskSchema);
+var List = Mongoose.model('List', ListSchema);
+
+// var Task = Mongoose.model('Task', TaskSchema);
 
 module.exports = {
-  List: List,
-  Task: Task 
+  List: List
 };

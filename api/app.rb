@@ -6,24 +6,51 @@ class OCCApi < Sinatra::Base
     "Welcome to the API"
   end
   
+  #
+  # API CALLS TO UPDATE TASK LIST(S)
+  #
+
+
   # get all tasks lists
-  get '/lists' do
+  get '/lists/?' do
+    # return success status
+    status 200
+
+    # allow anyone to access
+    headers['Access-Control-Allow-Origin'] = '*'
+
+    # return all task lists in JSON format
     content_type :json
-    all_lists = Tasklist.all
-    all_lists.to_json
+    Tasklist.all.to_json
   end
 
   # create a new task list
   post '/lists/:listname' do
     listname = params[:listname]
     Tasklist.new(title: listname).save
+
+    return "${listname} has been created"
+  end
+
+  # update a task list
+  put '/lists/:id' do
+    id = params[:id]
+    title = params[:title]
+    Tasklist.where(id: id).update(title: title)
   end
 
   delete "/lists/:id" do
     id = params[:id]
-    Tasklist.where(id: id).delete
-    return "#{id} has been deleted"
+    tasklist = Tasklist.where(id: id)
+    
+    unless !tasklist.exists?
+        tasklist.delete
+      else
+        return "That Tasklist ID does not exist"
+    end
+
   end
+
 
 end
 

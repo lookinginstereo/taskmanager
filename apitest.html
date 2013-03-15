@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEST PAGE</title>
+</head>
+<body>
+<form action="http://task.local:3000/lists">
+<input type="submit" value="Get Lists">
+</form>
+<input type="text" id="listname">
+<button id="submit">Create task list</button>
+<button id="getem">AJAX Get Lists</button>
+<div class="tasks"></div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+<script>
+$('#submit').on('click', function() {
+
+    var listname = $('#listname').val();
+
+    $.get("http://task.local:3000/lists/"+listname, "", function(data) {
+      console.log(data);
+    });
+});
+
+$('#getem').on('click', function() {
+
+    $.getJSON( "http://task.local:3000/lists", function(data) {
+        console.log(data);
+    });
+});
+
+</script>
+</body>
+</html>
