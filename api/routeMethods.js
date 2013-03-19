@@ -1,5 +1,6 @@
 var Schemas = require('./schemas.js'),
-    List = Schemas.List;
+    List = Schemas.List,
+    Task = Schemas.Task;
 
 exports.getAllTaskLists = function(req, res) 
 {
@@ -22,7 +23,7 @@ exports.getAllTaskLists = function(req, res)
 
 exports.createNewList =  function(req, res) 
 {
-  var newName = req.params.name,
+  var newName = req.body.name,
       newList = new List({name: newName});
 
   newList.save(function (errors, newList) {
@@ -49,12 +50,13 @@ exports.updateListNameById = function(req, res)
   if (newName !== null) {
 
     List.findByIdAndUpdate(id, { $set: {name: newName} }, function (err, list) {
-      if (err) 
-        return handleError(err);
-      else
+      if (err)
+        res.status(500);
+      else {
         res.status(200);
         res.send(list);
         res.end();
+      }
     });
 
   }
@@ -94,7 +96,7 @@ exports.getAllTasksForList = function(req, res)
       res.end();
     }
     else {
-      res.send(list.childTasks);
+      res.send(list.children);
       res.end();
     }
 
@@ -105,7 +107,45 @@ exports.getAllTasksForList = function(req, res)
 
 exports.createNewTaskForList = function(req, res)
 {
-  var listID = req.params.id;
+  var listID = req.params.listID,
+      taskName = req.body.name;
+
+  List.findById(listID, function(err, list) {
+
+    if (err) {
+      res.status(500);
+      res.send('there was an error getting the list by that the id ' + listID);
+      res.end();
+    }
+    else {
+      var task = new Task({name: taskName, complete: false});
+      list.children.push(task);
+
+      list.save(function(err, task) {
+        if (err) {
+          res.status(500);
+          res.send('there was an error saving the list after adding the task');
+          res.end();
+        }
+        else {
+          res.status(200);
+          res.send(task);
+          res.end();
+        }
+      });
+    }
+
+  });
+
+};
+
+exports.updateTaskById = function(req, res) 
+{
+  console.log(req.body);
+  var listID = req.params.listID,
+      taskID = req.params.taskID,
+      taskName = req.body.name,
+      complete = req.body.complete;
 
   List.findById(listID, function(err, list) {
     if (err) {
@@ -114,10 +154,56 @@ exports.createNewTaskForList = function(req, res)
       res.end();
     }
     else {
-      // list.childTasks.push
+      var task = list.children.id(taskID);
+      task.name = taskName;
+      task.complete = complete;
+
+      list.save(function(err, task) {
+        if (err) {
+          res.status(500);
+          res.send('there was an error saving the list after updating the task');
+          res.end();
+        }
+        else {
+          res.status(200);
+          res.send(task);
+          res.end();
+        }
+      });
+
+    }
+  });
+};
+
+exports.deleteTaskById = function(req, res) 
+{
+  var listID = req.params.listID,
+      taskID = req.params.taskID;
+
+  List.findById(listID, function(err, list) {
+    if (err) {
+      res.status(500);
+      res.send('there was an error getting the list by that the id ' + listID);
       res.end();
     }
+    else {
+      var task = list.children.id(taskID);
+      task.remove();
+      
+      list.save(function(err, task) {
+        if (err) {
+          res.status(500);
+          res.send('there was an error saving the list after removing the task');
+          res.end();
+        }
+        else {
+          res.status(200);
+          res.end();
+        }
+      });
 
+      res.status(200);
+      res.end();
+    }
   });
-
 };

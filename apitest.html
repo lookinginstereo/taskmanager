@@ -15,6 +15,7 @@
 <input type="text" id="listID" placeholder="Task List ID">
 <button id="deleteList">Delete task list</button><br>
 <input type="text" id="newname" placeholder="Name"> <input type="text" id="id" placeholder="Id"><button id="updateExistingList">Change Task Name</button><br><br>
+<input type="text" id="taskname" placeholder="Task Name"> <input type="text" id="tasklistid" placeholder="Id"><button id="addTask">Add Task</button><br><br>
 <button id="getAllLists">Refresh Table of Task Lists</button><br>
 <table id="tasks">
 <thead style="font-weight:bold;">
@@ -36,8 +37,10 @@ $(function(){
 });
 
 $('#createNewList').on('click', function() {
-  var listname = $('#listname').val();
-  $.post("http://task.local:3000/list/create/"+listname, "", function(data) {
+  var listname = $('#listname').val(),
+      data = {name: listname};
+
+  $.post("http://task.local:3000/list/create", data, function(data) {
     $('#getAllLists').click();
   });
 });
@@ -63,12 +66,12 @@ $('#getAllLists').on('click', function() {
         var current = data[i],
             name = current.name,
             id = current._id,
-            childTasks = current.childTasks.length;
+            children = current.children.length;
 
         var tableText = '<tr> \
             <td>'+name+'</td> \
             <td>'+id+'</td> \
-            <td>'+childTasks+'</td> \
+            <td>'+children+'</td> \
             <td><button class="update">Update</button></td> \
             </tr>';
 
@@ -85,6 +88,16 @@ $('#updateExistingList').on('click', function() {
       };
 
   $.post( "http://task.local:3000/list/update/"+id, data, function(data) {
+      console.log(data);
+  });
+});
+
+$('#addTask').on('click', function() {
+  var newName = $('#taskname').val(),
+      id = $('#tasklistid').val(),
+      data = {name: newName, complete: false};
+
+  $.post( "http://task.local:3000/list/create/"+id+"/task/", data, function(data) {
       console.log(data);
   });
 });
