@@ -592,3 +592,43 @@ Thu Mar 14 22:56:07 [initandlisten] journalCleanup...
 Thu Mar 14 22:56:07 [initandlisten] removeJournalFiles
 Thu Mar 14 22:56:07 [initandlisten] shutdown: removing fs lock...
 Thu Mar 14 22:56:07 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Mar 16 14:52:22 [initandlisten] MongoDB starting : pid=23696 port=27017 dbpath=/Users/mmehlhope/Sites/taskmanager/mongodb 64-bit host=Matts-MacBook-Air.local
+Sat Mar 16 14:52:22 [initandlisten] db version v2.2.2, pdfile version 4.5
+Sat Mar 16 14:52:22 [initandlisten] git version: d1b43b61a5308c4ad0679d34b262c5af9d664267
+Sat Mar 16 14:52:22 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Sat Mar 16 14:52:22 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/Users/mmehlhope/Sites/taskmanager/mongodb", logappend: "true", logpath: "/Users/mmehlhope/Sites/taskmanager/logs/mongo.log" }
+Sat Mar 16 14:52:22 [initandlisten] journal dir=/Users/mmehlhope/Sites/taskmanager/mongodb/journal
+Sat Mar 16 14:52:22 [initandlisten] recover begin
+Sat Mar 16 14:52:22 [initandlisten] recover lsn: 3321765
+Sat Mar 16 14:52:22 [initandlisten] recover /Users/mmehlhope/Sites/taskmanager/mongodb/journal/j._0
+Sat Mar 16 14:52:22 [initandlisten] recover skipping application of section seq:892715 < lsn:3321765
+Sat Mar 16 14:52:22 [initandlisten] recover skipping application of section seq:1845045 < lsn:3321765
+Sat Mar 16 14:52:22 [initandlisten] recover skipping application of section seq:1904575 < lsn:3321765
+Sat Mar 16 14:52:22 [initandlisten] recover skipping application of section seq:3083650 < lsn:3321765
+Sat Mar 16 14:52:22 [initandlisten] recover skipping application of section seq:3143180 < lsn:3321765
+Sat Mar 16 14:52:22 [initandlisten] recover cleaning up
+Sat Mar 16 14:52:22 [initandlisten] removeJournalFiles
+Sat Mar 16 14:52:22 [initandlisten] recover done
+Sat Mar 16 14:52:22 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Sat Mar 16 14:52:22 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Sat Mar 16 14:52:22 [initandlisten] ERROR:   addr already in use
+Sat Mar 16 14:52:22 [websvr] ERROR:   addr already in use
+Sat Mar 16 14:52:22 [initandlisten] now exiting
+Sat Mar 16 14:52:22 dbexit: 
+Sat Mar 16 14:52:22 [initandlisten] shutdown: going to close listening sockets...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: going to flush diaglog...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: going to close sockets...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: lock for final commit...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: final commit...
+Sat Mar 16 14:52:22 [initandlisten] shutdown: closing all files...
+Sat Mar 16 14:52:22 [initandlisten] closeAllFiles() finished
+Sat Mar 16 14:52:22 [initandlisten] journalCleanup...
+Sat Mar 16 14:52:22 [initandlisten] removeJournalFiles
+Sat Mar 16 14:52:22 [initandlisten] shutdown: removing fs lock...
+Sat Mar 16 14:52:22 dbexit: really exiting now

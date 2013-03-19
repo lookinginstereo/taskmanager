@@ -114,7 +114,7 @@ exports.createNewTaskForList = function(req, res)
       res.end();
     }
     else {
-      list.childTasks.push
+      // list.childTasks.push
       res.end();
     }
 
