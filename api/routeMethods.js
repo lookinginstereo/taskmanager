@@ -9,12 +9,10 @@ exports.getAllTaskLists = function(req, res)
   // Find all the available lists
   List.find(function(errors, lists){
     if (errors) {
-      res.send('there was an error getting the lists');
-      res.end();
+      res.send(500, errors);
     }
     else {
-      res.send(lists);
-      res.end();
+      res.send(200, lists);
     }
   });
 
@@ -26,16 +24,12 @@ exports.createNewList =  function(req, res)
   var newName = req.body.name,
       newList = new List({name: newName});
 
-  newList.save(function (errors, newList) {
-    if (errors) {
-      res.status(500);
-      res.send('Shit is broke, yo');
-      res.end();
+  newList.save(function (err, newList) {
+    if (err) {
+      res.send(500, err);
     }
     else {
-      res.status(200);
-      res.send('Successfully created '+newList);
-      res.end();
+      res.send(200, 'Successfully created '+newList);
     }
     
   });
@@ -51,17 +45,15 @@ exports.updateListNameById = function(req, res)
 
     List.findByIdAndUpdate(id, { $set: {name: newName} }, function (err, list) {
       if (err)
-        res.status(500);
+        res.send(500, err);
       else {
-        res.status(200);
-        res.send(list);
-        res.end();
+        res.send(200, list);
       }
     });
 
   }
   else {
-    res.status(204) // no change to content
+    res.send(204) // no change to content
   }
 
 };
@@ -73,15 +65,12 @@ exports.deleteListById = function(req, res)
 
   List.findByIdAndRemove(id, function(err, list){
     if (err) {
-      res.status(500);
-      res.send(err);
-      res.end();
+      res.send(500, err);      
     }
     else {
-      res.status(200);
-      res.end();
+      res.send(200); 
     }
-  })
+  });
 
 };
 
@@ -91,15 +80,11 @@ exports.getAllTasksForList = function(req, res)
 
   List.findById(listID, function(err, list) {
     if (err) {
-      res.status(500);
-      res.send('there was an error getting the list by that the id ' + listID);
-      res.end();
+      res.send(500, 'There was an error getting the list by that the id ' + listID);
     }
     else {
-      res.send(list.children);
-      res.end();
+      res.send(200, list.children);
     }
-
   });
 
 };
@@ -113,9 +98,7 @@ exports.createNewTaskForList = function(req, res)
   List.findById(listID, function(err, list) {
 
     if (err) {
-      res.status(500);
-      res.send('there was an error getting the list by that the id ' + listID);
-      res.end();
+      res.send(500, 'there was an error getting the list by that the id ' + listID);      
     }
     else {
       var task = new Task({name: taskName, complete: false});
@@ -123,14 +106,11 @@ exports.createNewTaskForList = function(req, res)
 
       list.save(function(err, task) {
         if (err) {
-          res.status(500);
-          res.send('there was an error saving the list after adding the task');
-          res.end();
+          res.send(500, 'there was an error saving the list after adding the task');          
         }
         else {
-          res.status(200);
-          res.send(task);
-          res.end();
+          res.send(200, task);
+          
         }
       });
     }
@@ -149,9 +129,7 @@ exports.updateTaskById = function(req, res)
 
   List.findById(listID, function(err, list) {
     if (err) {
-      res.status(500);
-      res.send('there was an error getting the list by that the id ' + listID);
-      res.end();
+      res.send(500, 'there was an error getting the list by that the id ' + listID);      
     }
     else {
       var task = list.children.id(taskID);
@@ -160,19 +138,16 @@ exports.updateTaskById = function(req, res)
 
       list.save(function(err, task) {
         if (err) {
-          res.status(500);
-          res.send('there was an error saving the list after updating the task');
-          res.end();
+          res.send(500, 'there was an error saving the list after updating the task');
+          
         }
         else {
-          res.status(200);
-          res.send(task);
-          res.end();
+          res.send(200, task);          
         }
       });
-
     }
   });
+
 };
 
 exports.deleteTaskById = function(req, res) 
@@ -182,9 +157,7 @@ exports.deleteTaskById = function(req, res)
 
   List.findById(listID, function(err, list) {
     if (err) {
-      res.status(500);
-      res.send('there was an error getting the list by that the id ' + listID);
-      res.end();
+      res.send(500, 'there was an error getting the list by that the id ' + listID);      
     }
     else {
       var task = list.children.id(taskID);
@@ -192,18 +165,13 @@ exports.deleteTaskById = function(req, res)
       
       list.save(function(err, task) {
         if (err) {
-          res.status(500);
-          res.send('there was an error saving the list after removing the task');
-          res.end();
+          res.send(500, 'there was an error saving the list after removing the task');          
         }
         else {
-          res.status(200);
-          res.end();
+          res.send(200);
         }
-      });
-
-      res.status(200);
-      res.end();
+      });      
     }
   });
+
 };
