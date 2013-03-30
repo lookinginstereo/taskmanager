@@ -1,3 +1,5 @@
 mongodb/
 
 *.log
+
+*.sublime-workspace
